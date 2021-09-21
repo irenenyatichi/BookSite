@@ -75,13 +75,18 @@ WSGI_APPLICATION = 'booksite.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+        'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-}
-
-
+        # 'default': {
+        #     'ENGINE': 'django',
+        #     'NAME': 'mongodb',
+        #     'ENFORCE_SCHEMA': False,
+        #     'CLIENT': {
+        #         'host': 'mongodb+srv://<username>:<password>@<atlas cluster>/<myFirstDatabase>?retryWrites=true&w=majority'
+        #     }  
+        }
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
